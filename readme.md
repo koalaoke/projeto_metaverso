@@ -10,11 +10,10 @@ Este projeto consiste em uma experiência de Realidade Virtual (VR) desenvolvida
 3. **Cena:** Abra a pasta `Assets/Scenes` e execute o arquivo `CenaPrincipal`.
 4. **Build:** O projeto está configurado para plataforma Android. Para testar em VR, utilize o *Build and Run* com o dispositivo conectado.
 
-
 ## Considerações
 
 ### Conceito e Motivação
-A ideia do ambiente foi democratizar o acesso a esportes de "inverno" ou de salão, como o Boliche e o Tênis, aproveitando o contexto das Olimpíadas de Inverno. O objetivo foi criar um espaço simples, mas funcional, onde a física fosse o elemento central da diversão.
+A ideia central do ambiente foi democratizar o acesso a desportos que, na realidade física, possuem barreiras de custo ou localização, como o boliche ou o ténis. O objetivo foi criar um espaço simples, mas funcional, onde a física fosse o elemento central da diversão.
 
 ### Decisões de Design e Assets
 * **Ambiente:** Optou-se pelo modelo *LargeRoom* do próprio Meta SDK. A escolha visou manter o *poly count* baixo e garantir compatibilidade visual com o Skybox nativo da Meta, evitando problemas de performance com modelos externos pesados.
@@ -23,7 +22,6 @@ A ideia do ambiente foi democratizar o acesso a esportes de "inverno" ou de sal�
 ### Desafios e Soluções com Auxílio de IA
 Utilizei ferramentas de IA como tutoras para superar obstáculos técnicos específicos, o que acelerou o aprendizado:
 * **Física da Bola:** Inicialmente, as bolas deslizavam infinitamente. Aprendi a configurar o *Angular Drag* e criar *Physics Materials* para controlar o atrito e o quique.
-* **Colisores:** Tive dificuldades com a raquete (não pegava ou não batia). A solução foi implementar colisores compostos, separando a lógica de "pegar" da lógica de "bater".
 * **Simulador:** Notei instabilidades visuais no simulador do Unity Editor, mas confirmei que as configurações de Build para Android garantem a estabilidade no dispositivo final.
 
 
